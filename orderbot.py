@@ -11,6 +11,10 @@ logger = logging.getLogger(__name__)
 admin_id = 1205843084  # ID администратора (должен быть integer)
 bot = telebot.TeleBot("7781582767:AAEQG3g51dGUIlp5kN45gGbX-CeV5s5yemU")
 
+@bot.message_handler(["chatid"])
+def chatid(message):
+    bot.send_message(message.chat.id, f'ID Вашего чата: {message.chat.id}')
+
 # Инициализация базы данных
 def init_db():
     conn = sqlite3.connect("orders.db", check_same_thread=False)
