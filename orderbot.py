@@ -8,8 +8,8 @@ import threading
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
-admin_id = 860826744  # ID администратора (должен быть integer)
-bot = telebot.TeleBot("7781582767:AAEQG3g51dGUIlp5kN45gGbX-CeV5s5yemU")
+admin_id = 860826744
+bot = telebot.TeleBot("7544376512:AAETnzJaBffb4i8sgivmVGG6ns-x20SbSHI")
 
 @bot.message_handler(["chatid"])
 def chatid(message):
