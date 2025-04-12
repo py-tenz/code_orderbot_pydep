@@ -3,13 +3,13 @@ from telebot import types
 import sqlite3
 import logging
 import threading
-
+import .env
 # Настройка логирования
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
 admin_id = 860826744
-bot = telebot.TeleBot("7544376512:AAETnzJaBffb4i8sgivmVGG6ns-x20SbSHI")
+bot = telebot.TeleBot(BOT_TOKEN)
 
 @bot.message_handler(["chatid"])
 def chatid(message):
