@@ -5,7 +5,7 @@ import logging
 import asyncio
 from aiogram import Dispatcher, Bot
 from config import BOT_TOKEN
-from app.handlers import router
+from handlers import router
 import dbconnection as db
 
 bot = Bot(BOT_TOKEN)
