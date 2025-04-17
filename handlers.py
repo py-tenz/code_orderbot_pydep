@@ -4,7 +4,7 @@ from aiogram.fsm.context import FSMContext
 from aiogram.fsm.state import StatesGroup, State
 from aiogram.types import Message, CallbackQuery
 from config import ADMIN_ID
-import app.keyboards as kb
+import keyboards as kb
 import dbconnection as db
 import aiosqlite
 
